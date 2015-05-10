@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp" >
+    </GridView>
+    
+    <LinearLayout
+        android:id="@+id/title_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/header"
+        android:background="#4d000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+    
+    <!-- 排序列表 
+    android:background="#f3f3f3f3"
+    -->
+    <ListView
+        android:id="@+id/title_select_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@color/white"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:paddingBottom="@dimen/px_12"
+        android:paddingTop="@dimen/px_1"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/part_header_ff7" />
+    
+</RelativeLayout>

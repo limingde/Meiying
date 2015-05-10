@@ -1,0 +1,197 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- 微信回调界面风格 -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <style name="LoginInfoSupplyText">
+        <item name="android:textColor">@color/fe9</item>
+        <item name="android:textSize">15.33dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SettingTextLabel">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15.33dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SettingTextContent">
+        <item name="android:textColor">@color/setting_text_content</item>
+        <item name="android:textSize">17.33dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="UserSettingTextLabel">
+        <item name="android:textColor">#323232</item>
+        <item name="android:textSize">@dimen/px_text_28</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="UserSettingTextContent">
+        <item name="android:textColor">#7c7c7c</item>
+        <item name="android:textSize">@dimen/px_text_24</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TitleRightBtnText">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+
+    <style name="shadow_down_black">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="Theme.Foo" parent="android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ProductIngredientsTipsDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/dialogtransparent</item>
+        <!-- 背景透明 -->
+
+    </style>
+
+    <style name="DiaryPlanDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/dialogtransparent</item>
+        <!-- 背景透明 -->
+
+    </style>
+
+    <style name="ShareDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/dialogtransparent</item>
+        <!-- 背景透明 -->
+    </style>
+
+    <style name="ProductParamTextTitle" parent="@android:Theme.Dialog">
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">@dimen/px_37</item>
+    </style>
+
+    <style name="ProductParamTextContent" parent="@android:Theme.Dialog">
+        <item name="android:textColor">@color/font4</item>
+        <item name="android:textSize">@dimen/px_27</item>
+    </style>
+
+    <style name="MainTabText">
+        <item name="android:textSize">@dimen/px_18</item>
+        <item name="android:textColor">@color/color_757575</item>
+    </style>
+
+    <style name="TransparentNoTitle" parent="@android:Theme.Translucent">
+
+
+
+　　
+　　		                                <item name="android:windowBackground">@color/transparent</item>
+
+
+
+
+	　	                                <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+
+
+
+
+
+
+
+　　</style>
+
+    <style name="NailTagsText">
+        <item name="android:paddingTop">@dimen/px_8</item>
+        <item name="android:paddingBottom">@dimen/px_8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_ff7da8</item>
+        <item name="android:textSize">@dimen/px_25</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SettingCellText">
+        <item name="android:textColor">@color/black_90</item>
+        <item name="android:textSize">@dimen/px_28</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ShowcaseView">
+        <item name="sv_backgroundColor">#B2000000</item>
+    </style>
+    <!-- 透明Activity -->
+    <style name="TransparenceTheme">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+</resources>

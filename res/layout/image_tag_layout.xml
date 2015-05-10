@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image_tag_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/tag_iv_left_group"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_4" >
+
+        <ImageView
+            android:id="@+id/tag_iv_left_out"
+            android:layout_width="@dimen/px_42"
+            android:layout_height="@dimen/px_42"
+            android:src="@drawable/oval_black"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/tag_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tag_iv_left_group"
+        android:background="@drawable/tag_arrow_left"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="13"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_text_24" />
+
+    <FrameLayout
+        android:id="@+id/tag_iv_right_group"
+        android:layout_width="@dimen/px_42"
+        android:layout_height="@dimen/px_42"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_4"
+        android:layout_toRightOf="@id/tag_text"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/tag_iv_right_out"
+            android:layout_width="@dimen/px_42"
+            android:layout_height="@dimen/px_42"
+            android:layout_gravity="center"
+            android:src="@drawable/oval_black" />
+
+        <ImageView
+            android:id="@+id/tag_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

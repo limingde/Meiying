@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:corner="http://schemas.android.com/apk/res/com.meilapp.meila"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_262626" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_88"
+        android:background="@color/black_90" >
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_28"
+            android:padding="@dimen/px_20"
+            android:text="上一步"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑照片"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_28"
+            android:padding="@dimen/px_20"
+            android:text="完成"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_img_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/rl_header"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_img_parrent"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+
+            <RelativeLayout
+                android:id="@+id/all_tag_layout"               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.dd.meiying.wiget.TagRelativeLayout
+                    android:id="@+id/tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent_background" >
+                </com.dd.meiying.wiget.TagRelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tag_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <FrameLayout
+                            android:id="@+id/iv_type_makeup_group"
+                            android:layout_width="@dimen/px_180"
+                            android:layout_height="@dimen/px_180" >
+
+                            <ImageView
+                                android:id="@+id/iv_type_makeup_out"
+                                android:layout_width="@dimen/px_100"
+                                android:layout_height="@dimen/px_100"
+                                android:layout_gravity="center"
+                                android:src="@drawable/oval_black" />
+
+                            <ImageView
+                                android:id="@+id/iv_type_makeup"
+                                android:layout_width="@dimen/px_100"
+                                android:layout_height="@dimen/px_100"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_label_makeup_big" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_type_makeup_group"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/tag_makeup"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/px_22" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_10" >
+
+                        <FrameLayout
+                            android:id="@+id/iv_type_custom_group"
+                            android:layout_width="@dimen/px_180"
+                            android:layout_height="@dimen/px_180" >
+
+                            <ImageView
+                                android:id="@+id/iv_type_custom_out"
+                                android:layout_width="@dimen/px_100"
+                                android:layout_height="@dimen/px_100"
+                                android:layout_gravity="center"
+                                android:src="@drawable/oval_black" />
+
+                            <ImageView
+                                android:id="@+id/iv_type_custom"
+                                android:layout_width="@dimen/px_100"
+                                android:layout_height="@dimen/px_100"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_label_custom_big" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_type_custom_group"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/tag_custom"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/px_22" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_btn_parrent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_114"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_26__80"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="滤镜"
+                    android:textColor="@color/color_f15b82"
+                    android:textSize="@dimen/px_28" />
+
+                <View
+                    android:layout_width="@dimen/px_1"
+                    android:layout_height="@dimen/px_32"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white_15" />
+
+                <Button
+                    android:id="@+id/btn_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textColor="@color/white_50"
+                    android:textSize="@dimen/px_28" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.dd.meiying.wiget.HorizontalListView
+            android:id="@+id/lv_filter_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:fadingEdge="none"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"/>
+
+        <LinearLayout
+            android:id="@+id/ll_add_tag_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/add_tag_tips1"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/px_text_32" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:gravity="center"
+                android:text="@string/add_tag_tips2"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/px_text_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

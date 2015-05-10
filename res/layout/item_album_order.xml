@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/album_thumb_layout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/px_1"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/album_thumb_icon_outer"
+        android:layout_width="@dimen/px_120"
+        android:layout_height="@dimen/px_120"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/px_24"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginBottom="@dimen/px_30"
+        android:layout_centerVertical="true"   
+        android:paddingTop="0dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="6dp"
+        android:background="@drawable/topic_photo_album_bg" >
+
+        <ImageView
+            android:id="@+id/album_thumb_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/sub_album_name"
+        android:layout_marginTop="@dimen/px_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/album_thumb_icon_outer"
+        android:layout_marginLeft="@dimen/px_24"
+        android:layout_centerVertical="true" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/ad"
+        android:textSize="@dimen/px_32"
+        android:background="@color/transparent"
+        android:text="所有照片" />
+    
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_10" />
+
+</RelativeLayout>

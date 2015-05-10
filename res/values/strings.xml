@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <!-- 引导问题 -->
+    <string name="guide_question_title">您当前最想解决的问题是下面的哪一项？</string>
+    <string name="guide_question_jump">跳过问题，直接进入美啦</string>
+    <string name="guide_question_jump2">立即查看为您找到的\"xx\"美刊吧</string>
+    <string name="guide_tips_1_1">在这里，人人都懂</string>
+    <string name="guide_tips_1_2">美</string>
+    <string name="guide_tips_2_1">来这里，天天都美</string>
+    <string name="guide_tips_2_2">啦</string>
+    <string name="get_const_failed">网络君抽风，请稍后重试~</string>
+    
+    
+    <!-- common string -->
+    <string name="test_time">00\'00\"</string>
+    
+    <string name="video">视频</string>
+    <string name="vbook">微美刊</string>
+    <string name="common_or">或者</string>
+    <string name="common_female">女</string>
+    <string name="common_male">男</string>
+    <string name="common_setting">设置</string>
+    <string name="common_atten">关注</string>
+    <string name="common_header">头像</string>
+    <string name="common_nickname">昵称</string>
+    <string name="common_sex">性别</string>
+    <string name="common_skin_type">肤质</string>
+    <string name="common_birthday">生日</string>
+    <string name="common_code">美啦暗号</string>
+    <string name="common_regtime">注册时间</string>
+    <string name="common_keep_secret">保密</string>
+    <string name="common_cancel">取消</string>
+    <string name="cancel">取  消</string>
+    <string name="confirm">确定</string>
+    <string name="send">发  送</string>
+    <string name="common_clear">清空</string>
+    <string name="common_loading">正在加载...</string>
+    <string name="search">搜索</string>
+    <string name="all">全部</string>
+    <string name="no_network_tip1">网络未连接</string>
+    <string name="no_network_tip2">请检查您的网络后尝试重新加载</string>
+    <string name="no_network_tip3">重新加载</string>
+    <string name="del">删除</string>
+    <string name="complete">完成</string>
+    <string name="publish">发布</string>
+    <string name="modify">修改</string>
+    <string name="or">或者</string>
+    <string name="img">图片</string>
+    <string name="product">化妆品</string> 
+	<string name="pick_product">插入化妆品</string>
+    <string name="more_option">更多操作</string>
+    <string name="show_more">显示更多</string>
+    <string name="show_all_replies">查看全部回复</string>
+    <string name="last_fan">已全部加载完毕  : )</string>
+    <string name="no_fan">没有粉丝</string>
+    <string name="no_follow">没有关注</string>
+    <string name="no_recommend_user">没有好友推荐</string>
+    <string name="no_msg">已全部加载完毕  : )</string>
+    <string name="no_huati">已全部加载完毕  : )</string>
+    <string name="no_comment">已全部加载完毕  : )</string>
+    <string name="no_collect">已全部加载完毕  : )</string>
+    <string name="no_dynamic">已全部加载完毕  : )</string>
+    <string name="large_page">显示大页面</string>
+    <string name="vote_content_less">答案不够哦~~</string>
+    <string name="common_image_clip">图片裁剪</string>
+    <string name="show_beauty_upload_hint">说点什么吧...（最多支持20个字）</string>
+    <string name="common_no_jump">暂不支持跳转，请升级到最新版本...</string>
+    <string name="action_finish">活动结束</string>
+    <string name="common_affirm">确认</string>
+    
+    <string name="del_collect_success">取消喜欢</string>
+    <string name="collect_success">已喜欢  : )</string>
+    <string name="collect_failed">喜欢失败</string>
+    <string name="del_collect_failed">删除喜欢失败</string>
+    
+    <string name="qiandao_not">星座签到</string>
+     <string name="no_login_qiandao_not">我要签到</string>
+    <string name="qiandao_ok"></string>
+    
+    <string name="more_dafen_title">给美啦五星好评吧：）有您的支持，我们一定会做得更好！</string>
+    
+    <!-- activity title -->
+    <string name="title_bangdan">榜单</string>
+    <string name="title_webview">网页</string>
+    <string name="search_product">搜索产品</string>
+    
+    <!-- error 提示 -->
+    <string name="error_nosd_card">SD卡不存在...</string>
+    
+    <!-- 微信分享的错误提示 -->
+    <string name="errcode_success">发送成功</string>
+	<string name="errcode_cancel">发送取消</string>
+	<string name="errcode_deny">发送被拒绝</string>
+	<string name="errcode_unknown">发送返回</string>
+	
+	<string name="share_input_hint">我的分享理由...</string>
+	<string name="error_image_load_failed">图片好羞涩，点击再试试～</string>
+	
+	
+    <string name="app_name">魅影</string>
+    <string name="connect_time_out">网络君抽风，请稍后重试~</string>
+    <string name="connect_no_response">您的网络不给力哦~</string>
+
+    <!-- 微信支付提示 -->
+    <string name="app_tip">提示</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    
+    <!-- 用户 -->
+    <string name="user_infosetting_title">个人信息设置</string>
+    <string name="title_activity_auth">授权</string>
+    <string name="title_userinfo_show">个人中心</string>
+    <string name="title_club">俱乐部</string>
+    <string name="userinfo_msg">消息</string>
+    <string name="userinfo_notification">通知</string>
+    <string name="userinfo_huati">话题</string>
+    <string name="userinfo_collection">收藏</string>
+    <string name="userinfo_comment">点评</string>
+    <string name="userinfo_collect">喜欢</string>
+    <string name="userinfo_show">秀美照</string>
+     <string name="userinfo_prize">奖品与兑换</string>
+     <string name="userinfo_order">订单</string>
+     <string name="userinfo_nail">秀美甲</string>
+      <string name="userinfo_hair">秀美发</string>
+    <string name="cosmeticbag">化妆包</string>
+    <string name="userinfo_chat">聊天</string>
+    <string name="userinfo_persional_data">个人资料</string>
+    <string name="userinfo_dynamic">动态</string>
+    <string name="userinfo_friends">朋友</string>
+    <string name="userinfo_setting">设置</string>
+    <string name="userinfo_myclub">我的俱乐部</string>
+    <string name="userinfo_mynail">我的秀美甲</string>
+    <string name="userinfo_myhair">我的秀美发</string>
+    <string name="userinfo_mc">那几天</string>
+    <string name="userinfo_trial">试用&#038;优惠</string>
+    
+    <!-- 消息中心 -->
+    <string name="reply">回复</string>
+    <string name="reply_wide"> 回复 </string>
+    <string name="reply_suffix">回复了我</string>
+    <string name="notification_prefix">您有一条新消息：</string>
+
+    
+    <!-- 话题 -->
+    <string name="vote">投票</string>
+    <string name="praise">赞</string>
+    <string name="praised">已赞</string>
+    <string name="visit">访问</string>
+    <string name="participate">参与</string>
+    <string name="publish_huati">发布新话题</string>
+     <string name="publish_nail">发布秀美甲</string>
+    <string name="publish_vote">发起投票</string>
+    <string name="search_huati_hint">输入话题关键词...</string>
+    <string name="huati_pinglun_title">写评论</string>
+    <string name="title_tip">标题：</string>
+    <string name="tip_vote_support">投票支持：</string>
+    <string name="group_tip">分类：</string>
+    <string name="content_tip">内容：</string>
+    <string name="huati_title_hint">给我的话题起个名字吧...</string>
+    <string name="nail_title_hint">给你的秀美甲配一句话吧...</string>
+    <string name="com_mass_title_hint">配一句话吧...</string>
+    <string name="hair_title_hint">给你的秀美发配一句话吧...</string>
+    <string name="wear_title_hint">给你的穿搭配一句话吧...</string>
+    <string name="huati_fenlei_hint">选择一个适合的分类吧...</string>
+    <string name="huati_summary_hint">描述一下情况...</string>
+    <string name="huati_summary_hint_new">分享你的心得经验…\n请遵循圈规发话题，美啦欢迎真实友好的心得分享，乱发灌水/软文/广告/兼职/代理/代购会被禁言</string>
+    <string name="huati_vote_hint">输入12字以内的内容...</string>
+    <string name="huati_pinglun_hint">写点评论吧...</string>
+    <string name="huati_fenlei_toast">请先选择分类</string>
+    <string name="huati_title_toast">写个标题呗！</string>
+    <string name="huati_pinglun_toast">请输入评论内容</string>
+    <string name="chat_toast">请输入想说的内容</string>
+    <string name="huati_length_min_toast">最少x个字哦~</string>
+    <string name="huati_length_max_toast">最多x个字哦~</string>
+    <string name="huati_content_toast">亲，你不写点什么，要发表什么嘞！</string>
+    <string name="huati_publish_ing">正在发表...</string>
+    <string name="huati_get_ing">正在加载话题...</string>
+    <string name="huati_pinglun_get_ing">正在加载评论...</string>
+    <string name="huati_reply_ing">正在回复...</string>
+    <string name="huati_follow_ing">正在收藏...</string>
+    <string name="huati_del_follow_ing">正在取消收藏...</string>
+    <string name="huati_vote_ing">正在投票...</string>
+    <string name="huati_delete_ing">正在删除...</string>
+    <string name="huati_pick_product">搜索添加产品</string>
+    <string name="huati_detail">话题详情</string>
+    <string name="huati_detail_title1">全部评论</string>
+    <string name="huati_detail_title2">只看楼主</string>
+    <string name="huati_pinglun_detail">评论详情</string>
+    <string name="huati_pinglun">评论</string>
+    <string name="huati_pinglun_huifu">回复</string>
+    <string name="huati_insert">插入：</string>
+    <string name="huati_insert_img">图片</string>
+    <string name="huati_insert_product">化妆品</string>
+    <string name="huati">话题</string>
+    <string name="huati_shenhe_failed">话题审核失败</string>
+    <string name="huati_deleted">话题已被主人删除</string>
+    
+    <string name="trial_input_name_hint">请正确填写姓名，方便快递联系</string>
+    <string name="trial_input_addr1_hint">选择所在地区</string>
+    <string name="trial_input_addr2_hint">请填写详细信息，方便快递派送</string>
+    <string name="trial_input_phone_hint">输入正确的手机号码</string>
+    <string name="trial_apply_preheat">预热中</string>
+    <string name="trial_apply">申请试用</string>
+    <string name="trial_apply_already">已申请</string>
+    <string name="trial_apply_review">查看试用报告</string>
+    <string name="trial_apply_report_and_winner">查看试用名单和报告</string>
+    <string name="trial_apply_upload">提交试用报告</string>
+    <string name="trial_report_upload_success">试用报告提交成功！</string>
+    <string name="trial_report_upload_failed">试用报告提交失败，请重试！</string>
+    <string name="trial_apply_declaration">美啦承诺：绝不会泄露用户的个人信息，收集这些信息只是想确保美妞能收到最合适自己的试用哦~</string>
+    
+    <string name="post_addr_secret">以上信息仅用于快递产品，绝不外露！</string>
+    
+    <string name="louzhu">楼主</string>
+    <string name="bianji">编辑</string>
+    <string name="paixu">排序</string>
+    <string name="jubao">举报</string>
+    <string name="pingbi">屏蔽</string>
+    <string name="guanzhu">关注</string>
+    <string name="shanchu">删除</string>
+    <string name="fenxiang">分享</string>
+    <string name="jubao_ing">正在举报...</string>
+    
+    <string name="share_ing">正在分享</string>
+    <string name="share_ok">分享成功</string>
+    <string name="share_failed">网络君抽风，请稍后重试~</string>
+    
+    <string name="write_huatipinglun_ok">评论成功</string>
+    <string name="write_huatipinglun_not_ok">评论失败</string>
+    <string name="write_huatipinglunhuifu_ok">回复成功</string>
+    <string name="write_huatipinglunhuifu_not_ok">回复失败</string>
+    <string name="write_huati_ok">发表话题成功</string>
+    <string name="write_huati_not_ok">发表话题失败</string>
+    <string name="add_product_ok">添加产品成功</string>
+    <string name="add_product_not_ok">添加产品失败</string>
+    
+    <string name="trial_apply_submit_ok">试用申请提交成功</string>
+    
+    <string name="write_huati_notify_user">\@ 提醒谁看  </string>
+    
+    <string name="long_img">长图</string>
+    <string name="huati_follow_ok">收藏话题成功</string>
+    <string name="huati_follow_failed">收藏话题失败</string>
+    <string name="huati_delete_ok">删除话题成功</string>
+    <string name="huati_delete_failed">删除话题失败</string>
+    <string name="huati_pinglun_delete_ok">删除评论成功</string>
+    <string name="huati_pinglun_delete_failed">删除评论失败</string>
+    <string name="huati_pinglun_huifu_delete_ok">删除回复成功</string>
+    <string name="huati_pinglun_huifu_delete_failed">删除回复失败</string>
+    <string name="huati_del_follow_ok">取消该话题收藏</string>
+    <string name="huati_del_follow_failed">取消收藏失败</string>
+    <string name="vote_failed">投票失败</string>
+    <string name="loading_for_huati_list">正在请求话题列表...</string>
+    <string name="loading_for_mass_list">正在请求圈子列表...</string>
+    <string name="submit">提交</string>
+    <string name="submit_already">已提交</string>
+    
+
+    <!-- 部件 -->
+    <string name="part_header_back">菜单</string>
+    
+    <!-- 写评论 -->
+    <string name="write_comment_i_comment">我来评论</string>
+    <string name="comment_tip1">点击图片找到您要点评的产品</string>
+    <string name="comment_cancel">取消</string>
+    <string name="comment_ok">发布</string>
+    <string name="comment_star_tip"> | 打个分呗！</string>
+    <string name="comment_add_img_tip">添加产品图片</string>
+    <string name="comment_content_tip">写点评论吧...</string>
+    <string name="comment_star_toast">给产品打个分呗！</string>
+    <string name="too_long">太长了~~</string>
+    <string name="comment_ok_toast">评论成功！</string>
+    <string name="comment_failed_toast">评论失败！</string>
+    <string name="comment_for_pepole_count_hint">%d人点评</string>
+    <string name="comment_count_hint">%d人评论</string>
+    <string name="comment_write_comment">写评论</string>
+    <string name="comment_show_whole">点击查看全文</string>
+    <string name="comment_pack_up">点击收起</string>
+    <string name="comment_more_comment">查看更多用户精彩评论</string>
+    <string name="comment_load_bigimage_failed">图片加载失败，点击重试</string>
+    <string name="loading_for_comment">正在请求评论...</string>
+    <string name="posting_for_comment">正在提交评论...</string>
+    <string name="posting_for_comment_img">正在上传图片...</string>
+    
+    <string name="waiting_for_server">正在请求服务器...</string>
+    
+    <!-- 扫描 -->
+    <string name="msg_default_status">美啦提醒您：请在镜头范围内进行扫描。  </string>
+    <string name="capture_msg">请将条形码或二维码对准扫描框，即可自动帮你查询。</string>
+
+    <!-- 顶部下拉加载   底部下拉加载 -->
+    <string name="pull_to_refresh_pull_label_meila">下拉刷新</string>
+    <string name="pull_to_refresh_release_label_meila">松开立即刷新</string>
+    <string name="pull_to_refresh_refreshing_label_meila">玩命加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label_meila">加载更多</string>
+    <string name="pull_to_refresh_time_label">上次刷新时间:%s</string>
+	<string name="pull_to_refresh_pull_up_label">上拉刷新</string>
+	<string name="pull_to_refresh_refreshing_footer_label">正在努力加载</string>
+   	<string name="pull_to_refresh_release_footer_label">加载更多</string>
+   	<string name="load_all_complete">已全部加载完毕  : )</string>
+   
+   
+    <string name="pull_to_refresh_article_pull_up_label">上拉浏览下一篇主题</string>
+    <string name="pull_to_refresh_article_release_up_label">松开浏览下一篇主题</string>
+    <string name="pull_to_refresh_article_pull_down_label">上拉浏览上一篇主题</string>
+    <string name="pull_to_refresh_article_release_down_label">松开浏览上一篇主题</string>
+    <string name="pull_to_refresh_article_refreshing_label">正在获取新的主题&#8230;</string>
+	 <string name="pull_to_refresh_article_next_title_label">没有下一篇</string>
+	 <string name="pull_to_refresh_article_pre_title_label">没有上一篇</string>
+	 <!-- 搜 -->
+    <string name="search_count_msg">0 人在正使用美啦扫货  </string>
+    <string name="search_msg">美啦正在努力拓展更多化妆品，敬请期待~ </string>
+    <string name="search_tips">点击这里可以打开面膜条码扫描器 </string>
+    <string name="category_name1">彩妆</string>
+    <string name="category_name2">香水</string>
+    <string name="category_name3">身体</string>
+    <string name="category_name4">护肤</string>
+    <string name="category_name5">美容食品</string>
+    <string name="category_name6">男士</string>
+    <string name="category_name7">工具</string>
+    <string name="category_name8">闲来无聊，\n   逛一逛...</string>
+    <string name="category_shortname8">随便逛一逛...</string>
+    <string name="search_result_default_title">搜索结果</string>
+    <string name="category">分类</string>
+    <string name="effect">功效</string>
+    <string name="brand">品牌</string>
+    <string name="discover">逛一逛</string>
+    
+    <string name="brand_product_list_title">品牌产品库</string>
+    <string name="mall_product_list_title">商城产品库</string>
+
+    <string name="loading_for_search">美啦正在努力查找哦～</string>
+    <string name="no_product_for_search">美啦好沮丧呢，继续加油完善我们的化妆品库~</string>
+    <string name="no_more_for_search">木有啦，已经全部咯 ~</string>
+
+    <!-- 手机输入 -->
+    <string name="manual_input_msg">请输入产品条形码：</string>
+    <string name="manual_input_title">手动输入条形码</string>
+    <string name="capture_manual_txt">手动输入</string>
+    <string name="add_product_title">新增产品</string>
+    <string name="add_product_add_msg">欢迎新增产品信息</string>
+    <string name="add_product_welcome">欢迎新增此产品信息：</string>
+    <string name="add_product_rewards">成功录入美啦之后，可以获得5美纷的奖励 : )</string>
+    <string name="add_product_more">补充更多（选填）：</string>
+    <string name="add_product_no_product">非常抱歉，美啦查询不到这个产品的信息...</string>
+    <string name="not_product">非常抱歉，美啦只支持化妆品类目产品的信息查询</string>
+    <string name="add_product_code_result_text">扫描结果</string>
+    <string name="add_product_code_msg">扫描出条形码：%s</string>
+    <string name="add_product_barcode">条形码：</string>
+    <string name="add_product_barcode_hint">手动输入</string>
+    <string name="add_product_barcode_scan">扫条码</string>
+    <string name="add_product_input_msg">手动输入条形码：%s</string>
+    <string name="add_product_name_text">名\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020称：</string>
+    <string name="add_product_brand_text">品\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020牌：</string>
+    <string name="add_product_name_hint">输入产品的名称</string>
+    <string name="add_product_brand_hint">输入产品的品牌</string>
+    <string name="add_product_email_hint">方便客服与您联系</string>
+    <string name="add_product_email_text">您的邮箱：</string>
+    <string name="add_product_msg_text">美啦客服GG会在7个工作日内完成审核，成功录入美啦产品库以后，会通过您的邮箱与您联系哦！\n(如有更详细信息，请访问meilapp.com补充)</string>
+    <string name="add_product_msg_text2">我们会在7个工作日内完成审核，成功录入美啦产品库后，会收到美啦通知和奖励哦~</string>
+    <string name="add_product_submit_text">提    交</string>
+    <string name="add_product_query_text">查    询</string>
+    <!-- 产品详情 -->
+    <string name="product_des_title">产品详情</string>
+    <string name="product_parameter_title">产品参数</string>
+    <string name="product_parameter_name">名\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020称：</string>
+    <string name="product_parameter_brand">品\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020牌：</string>
+    <string name="product_parameter_country">原\u0020\u0020产\u0020\u0020地：</string>
+    <string name="product_parameter_specification">规\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020格：</string>
+    <string name="product_parameter_effect">功\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020效：</string>
+    <string name="product_parameter_applicable">适用人群：</string>
+    <string name="product_parameter_applicable_skin">适用肤质：</string>
+    <string name="product_parameter_baozhiqi">保\u0020\u0020质\u0020\u0020期：</string>
+    <string name="product_parameter_market_price">市\u0020\u0020场\u0020\u0020价：</string>
+    <string name="product_parameter_cankao_price">参\u0020\u0020考\u0020\u0020价：</string>
+    <string name="product_parameter_more">&#8230; 更多</string>
+    <string name="product_parameter_tips">美啦正在努力收集更多资讯~</string>
+    <string name="product_shopinfo_title">商家信息</string>
+    <string name="product_shopinfo_main">更多商家</string>
+    <string name="product_shopinfo_price">参考价格</string>
+    
+    <string name="product_ingredients_title">成分分析</string>
+    <string name="product_ingredients_main">主要成分</string>
+    <string name="product_ingredients_content">(按含量)</string>
+    <string name="product_ingredients_effect">功效</string>
+    <string name="product_ingredients_safe_index">安全指数</string>
+    <string name="product_ingredients_tips">小贴士:%1$s</string>
+    <string name="product_recommend_title">媒体推荐</string>
+    <string name="product_use_method_title">使用方法</string>
+    <string name="product_shipai_title">产品实拍</string>
+    <string name="product_recommend_product_title">同类产品推荐</string>
+    <string name="product_card_comment_title">口碑点评</string>
+    <string name="product_card_test_report">试用报告</string>
+    <string name="product_write_comment_title">写点评</string>
+    <string name="market_price">市场价格：</string>
+    <string name="title_merchant_list">商家信息</string>
+    <string name="product_goto_buy">去购买</string>
+    <string name="merchant_recommend_btn">推荐商家</string>
+    <string name="product_merchant_empty">暂无任何商家信息哦：）</string>
+    
+    
+    <!-- 临时 -->
+    <string name="product_detail_name">产品名称</string>
+    <string name="product_detail_like_count">25</string>
+    <string name="product_ingredients_name_data">data1</string>
+    <string name="product_ingredients_effect_data">data2</string>
+    <string name="product_recommend_item_data">大S推荐，美白效果好的美白产品</string>
+    <string name="product_use_method_data">面部掮 理：每星期使用一至两次 将泥浆涂匀干净的脸部，避免触及眼部或唇部肌肤待5-10分钟以洁肤海绵或温水冲洗洁净 \n身体护理：每星期一至两次将泥浆厚厚涂匀全身（约一寸厚）待15-20分钟用温水冲洗洁净 \n温馨提示：护肤品成分各有...</string>
+    <string name="product_ingredients_explain_data">免责声明：\n\u0020\u0020产品成分与功效，均来源于产品检验报告，以及成分说明。主要成分的效果说明及刺激指数，部分来源于材料学、生命科学系的专家学者，部分来源于cosdna数据。如果您对美啦成分说明有任何疑义，可邮件service@meilapp.com。\n\n安全指数：\n5分-最安全\n4分-安全，可以放心使用\n3分-较安全，极度敏感肌肤会出现过敏现象\n2分-安全指数较低，建议做t抗敏测试\n1分-安全指数低，略微刺激\n0分-不推荐长期使用</string>
+   <string name="product_ingredients_explain_title">说明</string>
+    <!-- 查询结果 -->
+    <string name="search_result_product_effect">功效：</string>
+    <string name="search_result_product_price">参考价：</string>
+    <string name="search_result_product_ingredient">成份：</string>
+    <string name="search_result_product_location">原产地：</string>
+    <string name="search_result_title">您要找的是不是"%1$s"？为您找到与"%2$s"相关的%3$d个主题，%4$d个产品</string>
+    <string name="search_result_loading">正在为您加载中...</string>
+    <string name="rmb_sign">¥</string>
+    <string name="scan">扫条码</string>
+    
+    <!-- 日记 -->
+    <string name="diary_operate_msg">可操作状态:</string>
+    <string name="diary_operate_state_msg_not_plan_before">无记录哦~不护理？不美美！不美美？不开心！</string>
+    <string name="diary_operate_state_msg_not_plan_after">您没有定制护理计划哦，不做“黄脸婆”，从现在开始</string>
+    <string name="diary_operate_state_msg_not_plan_today">没有您的皮肤护理记录哦，别偷懒哦，快开始吧！</string>
+    <string name="diary_operate_state_msg_plan_today">您今天有护理计划，不能偷懒哦，快快完成吧！</string>
+    <string name="diary_operate_state_msg_plan_after">您在当天有一项皮肤护理计划，千万别错过哦！</string>
+    <string name="diary_operate_state_msg_perfection_before">%1$s月%2$s日，您完成了一次皮肤护理哦，真赞！要坚持哦！</string>
+    <string name="diary_operate_state_msg_perfection_today">今天，您完成了一次皮肤护理，皮肤正得意地美！</string>
+    <string name="diary_operate_state_msg_miss_today">您错过了今天的皮肤护理，赶紧补上吧，做最美的自己！</string>
+    <string name="diary_operate_state_msg_miss_before">%1$s月%2$s日，您错过了一次皮肤护理，一定不要再偷懒了哦！</string>
+    <string name="diary_operate_state_msg_photo_before">%1$s月%2$s日，您成功完成了一次皮肤护理，有图有真相哦</string>
+    <string name="diary_operate_state_msg_photo_today">今天，您在美啦完成了一次皮肤护理，变美美了哦，赞！</string>
+    <string name="diary_plan_start_btn">开     始</string>
+    <string name="diary_question_1">1、每天睡觉时间</string>
+    <string name="diary_question_2">2、您希望做面膜的频率？</string>
+    <string name="diary_question_3">3、是否今天就开始做面膜？</string>
+    <string name="diary_question_1_1">晚上8点前后</string>
+    <string name="diary_question_1_2">晚上10点前后</string>
+    <string name="diary_question_1_3">晚上12点前后</string>
+    <string name="diary_question_1_4">凌晨2点甚至更晚</string>
+    <string name="diary_question_2_1">每天都做</string>
+    <string name="diary_question_2_2">每三天做一次</string>
+    <string name="diary_question_2_3">一周做一次</string>
+    <string name="diary_question_2_4">没概念</string>
+    <string name="diary_question_3_1">是，今天就要做面膜，美丽不能偷懒~</string>
+    <string name="diary_question_3_2">否，明天再说</string>
+    <string name="diary_loading">正在生成日记计划哦...</string>
+    <string name="diary_plan_in">进入日记</string>
+    
+    <!-- 微美刊 -->
+    <string name="related_product_title">此页关联的产品</string>
+    <string name="query_related_product_title">查看此页关联的产品</string>
+    
+    <string name="test10">测试测试测试测试测试</string>
+    <string name="test5">测试测试测</string>
+    <string name="test30">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</string>
+    <string name="test_date">2013-02-06</string>
+    <string name="test_int">1234</string>
+
+    <string name="commit_ing">正在提交...</string>
+    <string name="loading">正在加载...</string>
+    <string name="next_title">下一篇：</string>
+    <string name="no_next_title">没有下一篇</string>
+    <string name="topic_author">来自:%s</string>
+    
+    
+    
+    <!-- 达人 -->
+    <string name="talent_brand_msg">%s推荐过的产品:</string>
+    <!-- 更多 -->
+    <string name="more_user_settings">个人设置</string>
+    <string name="more_system">系统设置</string>
+    <string name="more_version">当前版本</string>
+    <string name="more_msg_push">消息推送</string>
+    <string name="more_clear_cache">清除缓存</string>
+    <string name="more_recommend">推荐</string>
+    <string name="more_share">分享给朋友</string>
+    <string name="more_weibo">在微博上关注美啦</string>
+    <string name="more_disclaimer">免责声明</string>
+    <string name="more_other">其他</string>
+    <string name="more_about">关于美啦</string>
+    <string name="more_dafen">给美啦五星</string>
+    <string name="more_help_feedback">帮助</string>
+    <string name="more_feedback">意见反馈</string>
+    <string name="mofang">魔方</string>
+    <string name="more_mofang">美啦魔方</string>
+    <string name="more_invite">邀请QQ好友</string>
+    <string name="set_invite_user">设置邀请人</string>
+    <string name="already_invite_user">已设置邀请人</string>
+    <string name="more_app">美妞必备</string>
+    <string name="more_more">更多</string>
+    <string name="more_function_desc">功能介绍</string>
+    <string name="more_help">帮助中心</string>
+    <string name="more_level_desc">积分与等级说明</string>
+    <string name="about_msg">美啦，专注于化妆品领域的垂直点评社区。美啦由专业的化妆品行业专家、互联网领域资深团队共同搭建，旨在提供专业、权威的化妆品在线交流、导购资询服务。\n\n美啦已经覆盖了绝大多数化妆品品牌、产品、庞大的数据库，让您随时随地查询产品信息。\n\n美啦拥有超过数万名化妆品爱好者参与真实点评，更有百位专家达人，提供全面的化妆品使用心得，让您全面、客观地了解化妆品及其使用方法。\n\n美啦，是一个满载梦想，努力拼搏的团队！我们遇到过很多挫折、付出过很多汗水，流淌过很多眼泪，同样，我们也收获了很多鲜花和笑容！我们会一直向前，永不放弃，全心全力把美啦打造成中国最强大、最专业的化妆品垂直点评社区！</string>
+	<string name="loading_for_more_app">正在加载更多应用...</string>
+	<string name="is_latest_version">已经是最新版本</string>
+	
+	<string name="choose_bg_tip">选择背景图片</string>
+	<string name="choose_gallery">从手机相册选择</string>
+	<string name="choose_camera">拍一张</string>
+    
+    <!-- 分享 -->
+    <string name="bind_sina">绑定新浪微博</string>
+    <string name="bind_tencent">绑定腾讯微博</string>
+    <string name="bind_qq">绑定QQ空间</string>
+    <string name="bind_renren">绑定人人</string>
+    <string name="bind_douban">绑定豆瓣</string>
+    
+    <string name="share_friend">推荐给朋友</string>
+    
+    <!-- SPA -->
+    <string-array name="spa_text_array">
+        <item>让音乐带你去美妙的世界，让音乐勾起你缱绻的情怀！随机1</item>
+        <item>让音乐带你去美妙的世界，让音乐勾起你缱绻的情怀！随机2</item>
+        <item>让音乐带你去美妙的世界，让音乐勾起你缱绻的情怀！随机3</item>
+        <item>让音乐带你去美妙的世界，让音乐勾起你缱绻的情怀！随机4</item>
+        <item>让音乐带你去美妙的世界，让音乐勾起你缱绻的情怀！随机5</item>
+    </string-array>
+
+    <string name="spa_tips">敷上面膜，点击这里</string>
+    <string name="spa_download">第一次进入，音乐下载中，请等待  %s</string>
+    <string name="spa_download_no_internet">没有网络，请连接后，点击此处，再进行音乐计时器初始化</string>
+    <string name="spa_photo_tips">美啦魔镜：可以合成护肤前后对比图哦~</string>
+    <string name="spa_photo_btn">魔镜合成</string>
+    <string name="spa_photo_share">分   享</string>
+    <string name="spa_photo_retry">重   做</string>
+
+	<!-- 分享模板 -->
+	<string name="more_share_text">我正在用美啦，一个很好玩的美容护肤社区应用，你也一起来吧~咱们美啦见>>http://www.meilapp.com</string>
+	<string name="no_share_app">你没有安装任何可以分享的app~</string>
+	
+	<!-- 反馈 -->
+	<string name="feedback_send">意见与反馈</string>
+	<string name="feedback_list">我的反馈历史</string>
+	<string name="feedback_msg">请留下您的联系方式，方便我们与您保持联系</string>
+	<!-- loading -->
+	<string name="loading_msg">美啦正在努力为您加载...</string>
+	<string name="loading_bottom_msg">正在加载...</string>
+	<string name="loading_bottom_tips">拖动加载</string>
+	<string name="loading_bottom_all_tips">全部加载完成</string>
+	
+	
+	<!-- 主题 -->
+	<string name="index_today">今天</string>
+	
+	<!-- 非面膜产品 -->
+	<string name="not_product_title">非常抱歉，美啦暂时只支持面膜类产品查询哦</string>
+	<string name="not_product_msg_text">美啦正在努力拓展其它类目的产品，敬请期待！</string>
+	
+	<!-- 开发者选项页面 -->
+	<string name="developer_title">开发者选项</string>
+	<string name="developer_httphost">HttpHost</string>
+	<string name="developer_meilalog">打开logcat</string>
+	<string name="developer_confirm">确认修改</string>
+	
+	<!-- 登录页 -->
+	<string name="login_title_text">登录美啦</string>
+	<string name="login_use_qq_account">用QQ账号登录\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+	<string name="login_use_weibo_account">用新浪微博登录\u0020\u0020\u0020\u0020</string>
+	<string name="login_use_renren_account">用人人网帐号登录</string>
+	<string name="login_hide">登录后的美啦有更多强大的功能哦！</string>
+	<string name="login_error_here">登录异常请点击这里</string>
+	<string name="login_info_supply_title">登录成功，补充资料</string>
+	<string name="login_info_supply_sex">性别：</string>
+	<string name="login_info_supply_nickname">昵称：</string>
+	<string name="login_info_supply_skin">选择您的肤质：</string>
+	<string name="login_info_supply_birthday">生日：</string>
+	<string name="login_info_supply_birthday_hide">美啦只会显示您的年龄范围，在您生日的时候还有惊喜哦！</string>
+	<string name="login_info_supply_finish">完成啦，立即进入美啦</string>
+	<string name="login_info_supply_follow">推荐您关注一下大咖，助您秒变女神！</string>
+	<string name="login_info_supply_share">把美啦分享给朋友</string>
+	<string name="login_info_supply_hide">美啦会严密保护您的隐私，生日可能会有惊喜哦！</string>
+	<string name="login_info_supply_done">完成，立即进入美啦</string>
+	<string name="login_use_system_settings">系统设置及其他</string>
+	<string name="login_more_login_hint">更多登录方式</string>
+	<string name="login_not_weixin">微信登录失败，请安装微信客户端...</string>
+	<string name="login_weixin_api_dont_support">微信登录失败，请安装微信客户端...</string>
+	<string name="login_weixin_login_failed">微信登录失败，请重新登录...</string>
+	<string name="login_failed">登录失败，请重新登录！</string>
+	
+	<!-- 皮肤类型 -->
+	<string name="skin_type_dryness">干性肌肤</string>
+	<string name="skin_type_oiliness">油性肌肤</string>
+	<string name="skin_type_mixed">混合性肌肤</string>
+	<string name="skin_type_neutral">中性肌肤</string>
+	<string name="skin_type_sensitive">敏感肌肤</string>
+	
+	<!-- user info -->
+	<string name="more_sys_setting_title">更多</string>
+	<string name="system_setting_title">设置</string>
+	<string name="user_info_setting_title">个人信息设置</string>
+	<string name="user_info_header_set">头像设置</string>
+	<string name="user_nickname_change_title">修改昵称</string>
+	<string name="user_skintype_edit_title">修改肤质</string>
+	<string name="user_nickname_empty_hide">快取个漂亮的昵称吧...</string>
+	<string name="user_choose_photo_title">请选择照片获取方式</string>
+	<string name="user_tab_dynamic">动态</string>
+	<string name="user_tab_msg">消息</string>
+	<string name="user_tab_huati">话题</string>
+	<string name="user_tab_comment">点评</string>
+	<string name="user_tab_collect">喜欢</string>
+	<string name="user_tab_bag">化妆包</string>
+	<string name="user_tab_show">秀美照</string>
+	<string name="user_tab_fans">粉丝</string>
+	<string name="user_tab_attent">关注</string>
+	
+	<string name="club_tab_fans">粉丝</string>
+	<string name="club_tab_attent">关注产品</string>
+	<string name="club_tab_vbook">微美刊</string>
+	<string name="club_tab_show">秀美照</string>
+	
+	<string name="user_fans_title_suffix">的粉丝</string>
+	<string name="user_attens_title_suffix">的关注</string>
+	<string name="user_search">找朋友</string>
+	<string name="user_login_out">退出登录</string>
+	<string name="user_login_out_error">退出登录失败，请进入系统设置清除应用缓存！</string>
+	<string name="user_upload_success">头像上传成功！</string>
+	<string name="user_chat_to_other">发起聊天</string>
+	<string name="user_atten_other">关注TA</string>
+	
+	<!-- search hint -->
+	<string name="search_hint_default">搜索</string>
+	<string name="search_hint_user">用昵称或暗号搜索好友...</string>
+	<string name="search_hint_fans">用昵称搜索粉丝...</string>
+	<string name="search_hint_product">   输入关键词</string>
+	<string name="search_hint_product2">   搜产品/品牌/功效</string>
+	<string name="search_hint_huati">搜索话题...</string>
+	<string name="search_hint_in_huati_group">搜索当前分区下话题</string>
+	<string name="search_hint_in_mass_group">搜索圈话题</string>
+	<string name="search_hint_in_mass_mass_member">搜索圈成员</string>
+	<string name="search_hint_in_mass_search">搜圈子</string>
+	<string name="search_hint_huati_tabs">搜话题/产品/用户/圈子</string>
+	<string name="search_hint_beauty">搜索照片主人...</string>
+	<string name="search_hint_in_wear_search">搜索穿搭</string>
+	<string name="hint_comment_video">评论视频</string>
+	
+	<!-- title btn text -->
+	<string name="title_right_save">保  存</string>
+	<string name="title_right_upload">上  传</string>
+	<string name="title_right_done">完  成</string>
+	<string name="title_right_manage">管 理</string>
+	<string name="title_more">更  多</string>
+	<string name="title_system_settings">系统设置</string>
+	<string name="title_all_comment_for_product">口碑点评</string>
+	
+	<string name="collection">喜欢</string>
+	<string name="my_collection">我的喜欢</string>
+	<string name="collection_huazp">化妆品</string>
+	<string name="collection_vbook">微美刊</string>
+	
+	<string name="mianze_shop">任何通过使用美啦跳转链接到的第三方页面均系他人制作或提供，您可以从该第三方页面上获得资讯及享用服务，美啦对其合法性概不负责，亦不承担任何法律责任。</string>
+	
+	<!-- comment -->
+	<string name="comment_all_level">综合评分：%1$s | %2$s(%3$d人评论)</string>
+	
+	<!-- beauty show activity -->
+	<string name="beauty_show_title">秀美照</string>
+	<string name="progress_loading_hint">玩命加载中&#8230;</string>
+	<string name="beauty_history_text">查看榜单 ></string>
+	<string name="beauty_no_rank_hint">%1$d人打分参与排名</string>
+	<string name="beauty_upload_pic_hint">立即上传照片</string>
+	<string name="beauty_show_me_to_friend_hint">分享给更多好友为我打分吧</string>
+	<string name="beauty_show_mine_rank">我的排名：</string>
+	
+	<!-- mass -->
+	<string name="mass_me_rank_hint">榜单规则 ></string>
+	<string name="mass_create_rule_hint">创建圈子规则 ></string>
+	<string name="mass_create_name">圈名：</string>
+	<string name="mass_create_name_logo">圈图：</string>
+	<string name="mass_name_tips">美啦Tips:圈名一旦确定就不能再修改了</string>
+	<string name="mass_name_repeat_error">圈名已被使用，请重新取名！</string>
+	<string name="mass_add_logo_hint">点击图片上传独特的圈图哦~</string>
+	<string name="mass_topic_top">加精置顶</string>
+	<string name="mass_topic_not_top">取消置顶</string>
+	
+	<string name="internal_storage">Internal storage</string>
+	
+	<string name="tips_grade_spite">美啦Tips：涉嫌恶意打分的用户，将会受到严厉的惩罚！</string>
+	
+	<string name="yima_information">完善资料，就有姨妈编号，还有奖品拿哦~</string> 
+	
+	<!-- pay -->
+	<string name="pay_address_fit_hint">请填写收货地址</string>
+	<string name="pay_leave_msg">给卖家留言</string>
+	<string name="pay_cancel_order">取消订单</string>
+	<string name="pay_apply_refund">申请退款</string>
+	
+	<!-- 订单相关 -->
+	<string name="address_input_title">我的收货地址</string>
+	<string name="address_nomal_title">我的地址</string>
+	<string name="address_manage_title">管理我的地址</string>
+	<string name="address_default_mark">【默认地址】</string>
+	<string name="pay_check_logistics">查看物流</string>
+	<string name="pay_order_share_product">分享商品</string>
+	
+	<!-- 关注页面 -->
+	<string name="favor_login_tips">亲爱哒你还没有登录呢\n登录可以及时收到感兴趣的内容哦~</string>
+	<string name="favor_null_tips">亲爱哒你还没任何关注呢\n关注美啦大咖，助你秒变女神</string>
+	<string name="all_album_picture">全部照片</string>
+
+	<!-- 图片添加标签相关 -->
+	<string name="add_tag_tips1">点击照片</string>
+	<string name="add_tag_tips2">添加化妆品或自定义标签</string>
+	<string name="tag_custom">自定义标签</string>
+	<string name="tag_makeup">化妆品标签</string>
+	
+</resources>
