@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.meiying.com/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/px_600" 
-    android:background="@drawable/ic_launcher">
+    android:layout_height="@dimen/px_600"
+    android:background="@drawable/ic_launcher" >
 
     <RelativeLayout
         android:id="@+id/parrent"
@@ -19,8 +20,8 @@
             android:id="@+id/ll_lr_parrent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:visibility="gone" >
 
             <LinearLayout
                 android:id="@+id/ll_left_parrent"
@@ -29,34 +30,38 @@
                 android:layout_weight="1.0"
                 android:orientation="vertical" >
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_left_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/insert_photo_add" />
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_left_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                     android:layout_weight="1.0"
+                    android:layout_weight="1.0"
                     android:gravity="center"
                     android:textColor="@color/black_65"
                     android:textSize="@dimen/px_32"
                     android:visibility="gone" />
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_left_bottom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/insert_photo_add" />
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_left_bottom"
@@ -78,13 +83,15 @@
                 android:layout_weight="1.0"
                 android:orientation="vertical" >
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_right_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/insert_photo_add" />
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_right_up"
@@ -97,21 +104,23 @@
                     android:textSize="@dimen/px_32"
                     android:visibility="gone" />
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_right_bottom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                     android:layout_weight="1.0"
+                    android:layout_weight="1.0"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/insert_photo_add" />
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_right_bottom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                   android:layout_weight="1.0"
+                    android:layout_weight="1.0"
                     android:gravity="center"
                     android:text="0000"
                     android:textColor="@color/black_65"
@@ -125,7 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-             android:padding="@dimen/px_6"
+            android:padding="@dimen/px_6"
             android:visibility="visible" >
 
             <LinearLayout
@@ -135,14 +144,16 @@
                 android:layout_weight="1.0"
                 android:orientation="horizontal" >
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_up_left"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                   android:layout_weight="1.0"
-                     android:src="@drawable/insert_photo_add"
-                    android:scaleType="centerCrop" />
+                    android:layout_weight="1.0"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_up_left"
@@ -151,18 +162,20 @@
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
                     android:gravity="center"
-                    android:visibility="gone"
                     android:textColor="@color/black_65"
-                    android:textSize="@dimen/px_32" />
+                    android:textSize="@dimen/px_32"
+                    android:visibility="gone" />
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_up_right"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
-                     android:src="@drawable/insert_photo_add"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_up_right"
@@ -170,29 +183,30 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
-                    android:visibility="gone"
                     android:gravity="center"
                     android:text="00000"
                     android:textColor="@color/black_65"
-                    android:textSize="@dimen/px_32" />
+                    android:textSize="@dimen/px_32"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_bottom_parrent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                
                 android:layout_weight="1.0"
                 android:orientation="horizontal" >
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_bottom_left"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
-                     android:src="@drawable/insert_photo_add"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_bottom_left"
@@ -201,18 +215,20 @@
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
                     android:gravity="center"
-                    android:visibility="gone"
                     android:textColor="@color/black_65"
-                    android:textSize="@dimen/px_32" />
+                    android:textSize="@dimen/px_32"
+                    android:visibility="gone" />
 
-                <ImageView
+                <com.dd.meiying.wiget.gesturimgview.GestureImageView
                     android:id="@+id/iv_bottom_right"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1.0"
-                     android:src="@drawable/insert_photo_add"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_hecheng"
+                    gesture-image:max-scale="10.0"
+                    gesture-image:min-scale="0.75" />
 
                 <TextView
                     android:id="@+id/tv_bottom_right"
@@ -222,9 +238,9 @@
                     android:layout_weight="1.0"
                     android:gravity="center"
                     android:text="0000"
-                    android:visibility="gone"
                     android:textColor="@color/black_65"
-                    android:textSize="@dimen/px_32" />
+                    android:textSize="@dimen/px_32"
+                    android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

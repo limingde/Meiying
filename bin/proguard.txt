@@ -42,6 +42,19 @@
 # view res/layout/activity_image_cutter.xml #generated:8
 -keep class com.dd.meiying.wiget.cropimage.CropImageLayout { <init>(...); }
 
+# view res/layout/item_pic_hecheng.xml #generated:107
+# view res/layout/item_pic_hecheng.xml #generated:147
+# view res/layout/item_pic_hecheng.xml #generated:169
+# view res/layout/item_pic_hecheng.xml #generated:200
+# view res/layout/item_pic_hecheng.xml #generated:222
+# view res/layout/item_pic_hecheng.xml #generated:33
+# view res/layout/item_pic_hecheng.xml #generated:55
+# view res/layout/item_pic_hecheng.xml #generated:86
+-keep class com.dd.meiying.wiget.gesturimgview.GestureImageView { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:18
+-keep class com.dd.meiying.wiget.pagecur.CurlView { <init>(...); }
+
 # view res/layout/item_bucket_item.xml #generated:2
 -keep class com.image.album.view.SquareRelativeLayout { <init>(...); }
 

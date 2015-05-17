@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_26__80" xmlns:app="http://schemas.android.com/apk/res/com.dd.meiying">
+    android:background="@color/white_15" 
+    xmlns:app="http://schemas.android.com/apk/res/com.dd.meiying">
 
     <include
         android:id="@+id/header"
@@ -11,16 +12,14 @@
     <RelativeLayout
         android:id="@+id/rl_img_parrent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/header" >
 
-        <ImageView
+        <com.dd.meiying.wiget.pagecur.CurlView
             android:id="@+id/iv_img"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
     </RelativeLayout>
 
    <LinearLayout
@@ -29,6 +28,7 @@
         android:layout_height="@dimen/px_350"
         android:layout_alignParentBottom="true"
         android:background="@color/black_10"
+        android:visibility="gone"
         android:orientation="vertical" >
 
 

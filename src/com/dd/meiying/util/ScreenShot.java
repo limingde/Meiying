@@ -7,17 +7,8 @@ import android.graphics.Bitmap;
 import android.os.Environment;
 import android.view.View;
 
-/**
- * 截屏（指定区域）
- * @author jasen
- * v4.1.0
- * 
- */
+
 public class ScreenShot {
-	
-	public static String ImgSaveDir = Environment.getExternalStorageDirectory()
-			+ "/dd_photo/";
-	
 	/**
      * 获取指定Activity的截屏，保存到png文件
      * @param act
@@ -52,11 +43,11 @@ public class ScreenShot {
     }
 
     // 保存到到指定路径
-    public static void savePic(Bitmap b) {
+    public static String savePic(Bitmap b) {
 //        BitmapUtils.saveBitmap(b, strFileName, ImgSaveDir);
 //        boolean saveOk = AlbumHelper.getHelper().saveImg(b,
 //        		ImgSaveDir + strFileName);
-    	ImageFilterActivity.saveImage(b);
+    	return ImageFilterActivity.saveImage(b,ImageFilterActivity.ImgSaveDir);
     }
 
     /**

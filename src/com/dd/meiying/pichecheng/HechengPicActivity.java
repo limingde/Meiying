@@ -48,7 +48,10 @@ public class HechengPicActivity extends Activity{
 				break;
 			case R.id.right_btn:
 				int headerHeight = titleView.getHeight();
-				mPicHeChengQi.saveImage(headerHeight);
+				String path = mPicHeChengQi.saveImage(headerHeight);
+				Intent in = new Intent(IntentExtra.EXTRA_ACTION_HECHENGTUPIAN_SUCCESS);
+				in.putExtra(IntentExtra.EXTRA_DATA, path);
+				sendBroadcast(in);
 				finish();
 				break;
 			}
@@ -63,7 +66,7 @@ public class HechengPicActivity extends Activity{
 			mHechengData = data;
 			if(data != null ){
 				if(data.curType == PicHeChengQi.TYPE_IMG){
-					startActivityForResult(ImageAlbumGridActivity.getStartActIntent(HechengPicActivity.this,false), 
+					startActivityForResult(ImageAlbumGridActivity.getStartActIntent(HechengPicActivity.this,true), 
 							ImageAlbumGridActivity.REQUEST_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity);
 				} else {
 

@@ -1,8 +1,5 @@
 package com.dd.meiying;
 
-import com.dd.meiying.constent.IntentExtra;
-import com.dd.meiying.wiget.cropimage.CropImageLayout;
-
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -11,12 +8,15 @@ import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Environment;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.dd.meiying.abul.view.ImageAlbumGridActivity;
+import com.dd.meiying.constent.IntentExtra;
+import com.dd.meiying.wiget.cropimage.CropImageLayout;
 
 /**
  * 裁剪图片
@@ -39,10 +39,13 @@ OnClickListener {
 				ImageFilterActivity.ACTION_CLOSE_ACTIVITY));
 	}
 
+	private boolean mNeedToNext = false;
 	private void init() {
 		setUpView();
 		if (getIntent() != null) {
 			mPicPath = getIntent().getStringExtra(IntentExtra.EXTRA_IMG_URL);
+
+			mNeedToNext = getIntent().getBooleanExtra(IntentExtra.EXTRA_DATA_BOOL, false);
 			m_ivClipView.setImagePath(mPicPath);
 			if (!TextUtils.isEmpty(mPicPath)) {
 				m_ivClipView.setImageBitmap(createCaptureBitmap(mPicPath));
@@ -82,9 +85,10 @@ OnClickListener {
 		m_rvRotare.setOnClickListener(this);
 	}
 
-	public static Intent getStartActIntent(Activity from, String picPath){
+	public static Intent getStartActIntent(Activity from, String picPath,boolean isNeedToNext){
 		Intent intent = new Intent(from, ImageCutterActivity.class);
 		intent.putExtra(IntentExtra.EXTRA_IMG_URL, picPath);
+		intent.putExtra(IntentExtra.EXTRA_DATA_BOOL, isNeedToNext);
 		return intent;
 	}
 
@@ -101,9 +105,15 @@ OnClickListener {
 		case R.id.image_cutter_next:
 			mBitmap = m_ivClipView.clip();
 			if (mBitmap != null) {
-				String path = ImageFilterActivity.saveImage(mBitmap);
+				String path = ImageFilterActivity.saveImage(mBitmap,ImageFilterActivity.ImgCacheDir);
 				if (path != null) {
-				startActivity(ImageFilterActivity.getStartActIntent(this, path));					
+					if(mNeedToNext){
+						startActivityForResult(ImageFilterActivity.getStartActIntent(this, path,true),
+								ImageAlbumGridActivity.REQUEST_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity);
+					} else {
+						startActivity(ImageFilterActivity.getStartActIntent(this, path,false));					
+						
+					}
 				}
 			} 
 			break;
@@ -167,6 +177,17 @@ OnClickListener {
 			} catch (OutOfMemoryError oe) {
 				return null;
 			}
+		}
+	}
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		if(requestCode == ImageAlbumGridActivity.REQUEST_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity){
+			if (data != null) {
+				setResult(ImageAlbumGridActivity.RESULT_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity, data);				
+			}	
+			finish();
 		}
 	}
 }

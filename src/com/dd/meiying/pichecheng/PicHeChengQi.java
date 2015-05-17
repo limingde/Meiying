@@ -109,7 +109,7 @@ public class PicHeChengQi {
 		return v;
 	}
 	public View GetView(final HechengIndexData data){
-		View v = View.inflate(act, R.layout.item_pic_hecheng, null);	
+		View v = View.inflate(act, R.layout.item_pic_hecheng_index, null);	
 		m_rlParrent = (RelativeLayout) v.findViewById(R.id.parrent);
 		LayoutParams p = new LayoutParams(
 				act.getResources().getDimensionPixelSize(R.dimen.px_169),
@@ -430,7 +430,7 @@ public class PicHeChengQi {
 	private TextView m_tvBL;
 	private TextView m_tvBR;
 
-	public void saveImage(int headerHeight){
+	public String  saveImage(int headerHeight){
 		// 获取状�?栏高�?
 		Rect frame = new Rect();
 		act.getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
@@ -441,7 +441,7 @@ public class PicHeChengQi {
 		int picHeight = m_rlParrent.getHeight();
 		Bitmap mBitmap = ScreenShot.takeScreenShot(act, 0, (statusBarHeight + headerHeight), picWidth, picHeight);
 		// 保存图片（不带水印）
-		ScreenShot.savePic(mBitmap);
+		return ScreenShot.savePic(mBitmap);
 	}
 	public interface PicHechengQiCallBack{
 		/** 

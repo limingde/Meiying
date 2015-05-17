@@ -4,19 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.dd.meiying.adapter.ImageFilterAdapter;
-import com.dd.meiying.bean.FilterImgItem;
-import com.dd.meiying.bean.TagResource;
-import com.dd.meiying.constent.IntentExtra;
-import com.dd.meiying.filter.ImageFilter;
-import com.dd.meiying.util.AsyncBitmapLoader;
-import com.dd.meiying.util.BitmapUtils;
-import com.dd.meiying.util.ScreenShot;
-import com.dd.meiying.util.Utils;
-import com.dd.meiying.util.WatermarkUtil;
-import com.dd.meiying.wiget.HorizontalListView;
-import com.dd.meiying.wiget.TagRelativeLayout;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -42,20 +29,30 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-/**
- * 图片滤镜&标签
- * @author Darren
- * 
- * v4.1.0
- *
- */
+import com.dd.meiying.abul.view.ImageAlbumGridActivity;
+import com.dd.meiying.adapter.ImageFilterAdapter;
+import com.dd.meiying.bean.FilterImgItem;
+import com.dd.meiying.bean.TagResource;
+import com.dd.meiying.constent.IntentExtra;
+import com.dd.meiying.filter.ImageFilter;
+import com.dd.meiying.util.AsyncBitmapLoader;
+import com.dd.meiying.util.BitmapUtils;
+import com.dd.meiying.util.FileUtil;
+import com.dd.meiying.util.ScreenShot;
+import com.dd.meiying.util.Utils;
+import com.dd.meiying.wiget.HorizontalListView;
+import com.dd.meiying.wiget.TagRelativeLayout;
+
 
 public class ImageFilterActivity extends Activity {
 
 	public final static String ACTION_CLOSE_ACTIVITY = "action close activity";
-	public static String ImgCacheDir = Environment
+	public static String ImgSaveDir = Environment
 			.getExternalStorageDirectory().getAbsolutePath()
 			+ "/meiying_photo";
+	public static String ImgCacheDir = Environment
+			.getExternalStorageDirectory().getAbsolutePath()
+			+ "/meiying_photocache";
 	// 标签相关
 	private RelativeLayout m_rlAllTag;
 	private RelativeLayout m_rlMark; // 标记
@@ -91,9 +88,10 @@ public class ImageFilterActivity extends Activity {
 	 * @param needToStartTopicPublish  完成后是否需要跳转到发话题页�?
 	 * @return
 	 */
-	public static Intent getStartActIntent(Activity from,String imgPath){
+	public static Intent getStartActIntent(Activity from,String imgPath,boolean isNeedToNext){
 		Intent intent = new Intent(from,ImageFilterActivity.class);
 		intent.putExtra(IntentExtra.EXTRA_DATA, imgPath);
+		intent.putExtra(IntentExtra.EXTRA_DATA_BOOL, isNeedToNext);
 		return intent;
 	}
 
@@ -106,10 +104,18 @@ public class ImageFilterActivity extends Activity {
 				finish();
 				break;
 			case R.id.tv_next:
-				String picPath = saveImage(mFilterBmp == null ? mBmp : mFilterBmp);
-				saveImgWithTag();				
+				String picPath = saveImage(mFilterBmp == null ? mBmp : mFilterBmp,ImgSaveDir);
+				FileUtil.deleteDirRecursive(new File(ImgCacheDir));
+				//				saveImgWithTag();				
 				if( !TextUtils.isEmpty(picPath)){
-					closeAllActivity();
+					if(mNeedToNext){
+						Intent in = new Intent();
+						in.putExtra(IntentExtra.EXTRA_DATA, picPath);
+						setResult(ImageAlbumGridActivity.RESULT_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity, in);	
+						finish();
+					} else{
+						closeAllActivity();
+					}
 					finish();
 				} else {
 					Utils.displayToast(ImageFilterActivity.this, "图片保存失败");
@@ -164,10 +170,10 @@ public class ImageFilterActivity extends Activity {
 		}
 	};
 
-	public static String saveImage(Bitmap bmp){
+	public static String saveImage(Bitmap bmp,String pathDir){
 		if (bmp != null) {
 
-			File dir = new File(ImgCacheDir);
+			File dir = new File(pathDir);
 			if (!dir.exists()) {
 				dir.mkdirs();
 			} else if (!dir.isDirectory()) {
@@ -192,7 +198,7 @@ public class ImageFilterActivity extends Activity {
 		this.finish();
 	}
 	private String mImgPsth;
-	private boolean mNeedToStartTopicPublish = false;
+	private boolean mNeedToNext = false;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -202,6 +208,7 @@ public class ImageFilterActivity extends Activity {
 		mBmpLoader = new AsyncBitmapLoader();
 		if(getIntent() != null){
 			mImgPsth = getIntent().getStringExtra(IntentExtra.EXTRA_DATA);
+			mNeedToNext = getIntent().getBooleanExtra(IntentExtra.EXTRA_DATA_BOOL, false);
 		}
 		getData();
 		mAdapter =  new ImageFilterAdapter(this, mData,mThuBmp);
@@ -253,8 +260,8 @@ public class ImageFilterActivity extends Activity {
 		}
 		if(h1 < hh){
 			hh = h1;
-			if(hh != 0){
-				ww = (int)((float)h/(float)hh * w);
+			if(h != 0){
+				ww = (int)((float)hh/(float)h * w);
 			}
 		} else {
 			if(w != 0){

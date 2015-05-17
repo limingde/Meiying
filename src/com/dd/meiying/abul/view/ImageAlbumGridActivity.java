@@ -50,13 +50,6 @@ import com.dd.meiying.util.GetPictureDialog;
 import com.dd.meiying.util.MeiyingResource;
 import com.dd.meiying.util.Utils;
 
-
-/**
- * 照片选择界面
- * 
- * @author shawn
- * @date 2015-3-17
- * */
 public class ImageAlbumGridActivity extends Activity {
 	public static final int REQUEST_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity = 10001;
 	public static final int RESULT_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity = 2001;
@@ -164,7 +157,13 @@ public class ImageAlbumGridActivity extends Activity {
 			if (pathList != null && pathList.size() > 0) {
 				
 				mHandler.sendEmptyMessage(MSG_REFRESH_ALBUM_VIEW);
-				startActivity(ImageCutterActivity.getStartActIntent(act, pathList.get(0)));
+				if(mNeedToNext){
+					startActivityForResult(ImageCutterActivity.getStartActIntent(act, pathList.get(0),true), 
+							ImageAlbumGridActivity.REQUEST_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity);
+				} else{
+					startActivity(ImageCutterActivity.getStartActIntent(act, pathList.get(0),false));							
+					
+				}
 			}
 
 
@@ -435,12 +434,11 @@ public class ImageAlbumGridActivity extends Activity {
 								"你选择的图片有误");
 					} else {
 						if(mNeedToNext){
-							startActivity(ImageCutterActivity.getStartActIntent(act, picPath));							
+							startActivityForResult(ImageCutterActivity.getStartActIntent(act, picPath,true), 
+									ImageAlbumGridActivity.REQUEST_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity);
 						} else{
-							Intent in = new Intent();
-							in.putExtra(IntentExtra.EXTRA_DATA, picPath);
-							act.setResult(ImageAlbumGridActivity.RESULT_CODE_SELECT_IMAGE_FROM_ImageAlbumGridActivity, in);	
-							finish();
+							startActivity(ImageCutterActivity.getStartActIntent(act, picPath,false));							
+							
 						}
 					}
 					// Intent intent = new Intent(ImageAlbumGridActivity.this,

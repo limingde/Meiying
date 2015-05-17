@@ -82,6 +82,6 @@ public class WatermarkUtil {
      */
     public static void addWatermark(Activity act, Bitmap bm, int watermarkResId, int type) {
     	Bitmap b = WatermarkUtil.initWatermark(act, bm, watermarkResId, type);
-    	ImageFilterActivity.saveImage(b);
+    	ImageFilterActivity.saveImage(b,ImageFilterActivity.ImgSaveDir);
     }
 }
