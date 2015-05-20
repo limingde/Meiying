@@ -38,6 +38,7 @@ import com.dd.meiying.constent.IntentExtra;
 import com.dd.meiying.pichecheng.HechengPicActivity;
 import com.dd.meiying.util.AsyncBitmapLoader;
 import com.dd.meiying.util.FileUtil;
+import com.dd.meiying.util.FontsUtil;
 import com.dd.meiying.wiget.HorizontalListView;
 import com.dd.meiying.wiget.pagecur.CurlPage;
 import com.dd.meiying.wiget.pagecur.CurlView;
@@ -251,7 +252,8 @@ public class MainActivity extends Activity {
 		rightBtn.setText("制作");
 		rightBtn.setOnClickListener(mOnClickListener);
 		TextView title = (TextView)titleView.findViewById(R.id.title_tv);
-		title.setText("我的魅影");
+		title.setText("魅影相册");
+		FontsUtil.setTypeface(title, FontsUtil.TYPE_STXINGKA);
 	}
 
 

@@ -10,6 +10,11 @@
             <flag name="rightBottom" value="8" />
         </attr>
     </declare-styleable>
+    <declare-styleable name="RotateTextView">
+        <attr name="rotate" format="integer" />
+        <attr name="translateX" format="dimension" />
+        <attr name="translateY" format="dimension" />
+    </declare-styleable>
 
     <attr name="direction">
         <enum name="rightToLeft" value="0" />
@@ -49,7 +54,7 @@
         <attr name="fadeDelay" format="integer" />
         <attr name="fadeDuration" format="integer" />
         <attr name="roundRectRadius" format="dimension" />
-    </declare-styleable>
+    </declare-styleable>
     -->
 
     <declare-styleable name="CustomTextView">
