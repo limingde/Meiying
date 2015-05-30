@@ -79,7 +79,7 @@ public class TextLayoutView extends FrameLayout{
 			if(view != null &&  view.m_rtv != null){
 				float vth = view.m_rtv.getMeasuredHeight();
 				float vty = view.m_rtv.getMeasuredWidth();
-				view.m_rtv.
+				
 			}
 		}
 	}
